@@ -1,0 +1,59 @@
+.tree {
+  font-size: 12.5px;
+  padding: 4px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 4px 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: background 0.1s var(--ease);
+  white-space: nowrap;
+}
+
+.row:hover {
+  background: var(--bg-3);
+  color: var(--text-primary);
+}
+
+.fileRow.selected {
+  background: var(--accent-bg);
+  color: var(--accent-strong);
+}
+
+.chevron {
+  display: inline-block;
+  width: 10px;
+  flex-shrink: 0;
+  color: var(--text-tertiary);
+  transition: transform 0.12s var(--ease);
+  font-size: 11px;
+}
+
+.chevronOpen {
+  transform: rotate(90deg);
+}
+
+.icon {
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.count {
+  font-size: 10.5px;
+  color: var(--text-disabled);
+  font-family: var(--mono);
+}
